@@ -1,15 +1,14 @@
 # site
-title: Louie
-baseurl: "/louie"
-url: "http://lily.work"
+title: hederaeye
+baseurl: ""
+url: ""
 favicon: "/assets/sample/ico.png"
 g_analytics: UA-12345678-1
 
 # bio
-header: Louie
+header: hederaeye
 desc: >
-  A Jekyll theme (that looks awesome). Louie is free, lightweight,
-  and customizable as a blog, archive, or portfolio.
+  developing
 
 # posts
 date_format: "%Y"
