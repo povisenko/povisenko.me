@@ -1,12 +1,12 @@
 # site
-title: hederaeye
+title: Sergey Povisenko
 baseurl: ""
 url: ""
 favicon: "/assets/sample/ico.png"
 g_analytics: UA-12345678-1
 
 # bio
-header: hederaeye
+header: Sergey Povisenko
 desc: >
   developing
 
@@ -25,3 +25,9 @@ markdown: kramdown
 exclude:
   - Gemfile
   - Gemfile.lock
+
+collections:
+  recordings:
+    output: true
+  articles:
+    output: true

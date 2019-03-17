@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: " en" }}">
+{% include head.html %}
+<video autoplay muted loop id="background_video">
+    <source src="/assets/background.mp4" type="video/mp4">
+</video>
+<body>
+<div class="container">
+    <header class="wrapper header">
+        <a href="/about-me" class="face">
+            <img src="/assets/me.jpg" alt="Photo of Sergey Povisenko" height="80" width="80"/>
+        </a>
+        {% include header.html %}
+        <nav>
+            <ul class="menu">
+                <li><a href="/recordings" title="my musical recordings">recordings</a></li>
+                <li><a href="/articles" title="my articles about coding and programming">coding and programming</a></li>
+                <li><a href="/posts" title="writings about anything else">other writings</a></li>
+            </ul>
+        </nav>
+    </header>
+    {{ content }}
+</div>
+</body>
+
+</html>

@@ -1,8 +1,8 @@
 ---
-layout: post
+layout: article
 title:  Berry Perfume
 author: M. Stanley Bubien
-category: Narrative
+category: Narrative articles
 img: https://images.unsplash.com/photo-1444399625673-8aa3b0c698ae?dpr=1&auto=format&fit=crop&w=1500&h=2251&q=80&cs=tinysrgb&crop=
 ---
 
