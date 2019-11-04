@@ -1,12 +1,43 @@
-- title: Github
-  url: http://github.com/povisenko
-- title: SoundCloud
-  url: https://soundcloud.com/povisenko
-- title: Instagram
-  url: https://www.instagram.com/povisenko
-- title: Bandcamp
-  url: https://bandcamp.com/povisenko
 - title: Twitter
   url: http://twitter.com/povisenko
+  fa-icon: fab fa-twitter
+
+- title: Instagram
+  url: https://www.instagram.com/povisenko
+  fa-icon: fab fa-instagram
+
+- title: Facebook
+  url: https://www.facebook.com/sergey.povisenko
+  fa-icon: fab fa-facebook
+
+- title: SoundCloud
+  url: https://soundcloud.com/povisenko
+  fa-icon: fab fa-soundcloud
+
+- title: Bandcamp
+  url: https://bandcamp.com/povisenko
+  fa-icon: fab fa-bandcamp
+
+- title: Apple Music
+  url: https://music.apple.com/profile/povisenko
+  fa-icon: fab fa-apple
+
+- title: Spotify
+  url: https://open.spotify.com/user/povisenko
+  fa-icon: fab fa-spotify
+
+- title: GitHub
+  url: http://github.com/povisenko
+  fa-icon: fab fa-github
+
+- title: stackoverflow
+  url: https://stackoverflow.com/users/2852528/povisenko
+  fa-icon: fab fa-stack-overflow
+
 - title: LinkedIn
   url: https://www.linkedin.com/in/sergeypovisenko/
+  fa-icon: fab fa-linkedin
+
+- title: Email
+  url: mailto:sergey.povisenko@gmail.com
+  fa-icon: fas fa-envelope

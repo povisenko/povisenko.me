@@ -8,7 +8,7 @@ g_analytics: UA-12345678-1
 # bio
 header: Sergey Povisenko
 desc: >
-  developing
+  <i class="fas fa-sun"></i> from _config.yaml
 
 # posts
 date_format: "%Y"
@@ -31,3 +31,9 @@ collections:
     output: true
   articles:
     output: true
+
+plugins:
+  - jekyll-font-awesome-sass
+
+font-awesome:
+  assets: true

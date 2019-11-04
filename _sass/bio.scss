@@ -16,9 +16,22 @@
   }
 }
 
+.bio__face {
+  amp-img {
+    border-radius: 50%;
+  }
+}
+
 .bio__social {
   margin: 0;
   margin-top: 10px;
   padding: 0;
   list-style: none;
+}
+
+.bio__social__links{
+  display: inline;
+  a{
+    text-decoration: none;
+  }
 }
