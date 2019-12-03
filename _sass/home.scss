@@ -1,0 +1,59 @@
+.div-home {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 11% 15% 15% 15%;
+  width: 70%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.header-home {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.div-bio {
+  margin: 20px 0 15px;
+  font-size: 1.1em !important;
+}
+
+.div-bio-header {
+  font-weight: 700;
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.href-bio-face {
+  margin-top: 20px;
+
+  amp-img {
+    border-radius: 50%;
+  }
+}
+
+.ul-bio-social {
+  margin: 10px 0 0;
+  padding: 0;
+  list-style: none;
+
+  li {
+    display: inline;
+
+    a {
+      text-decoration: none;
+    }
+  }
+}
+
+nav {
+  margin: 15px 0 20px;
+  font-size: 1.4em !important;
+}
