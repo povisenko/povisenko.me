@@ -27,9 +27,9 @@ exclude:
   - Gemfile.lock
 
 collections:
-  recordings:
+  records:
     output: true
-  articles:
+  papers:
     output: true
 
 plugins:

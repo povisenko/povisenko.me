@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: " en" }}">
+{% include head.html %}
+<video autoplay muted loop id="background_video">
+    <source src="/assets/backgrounds/hedera-eye.mp4" type="video/mp4">
+</video>
+<body>
+<div class="div-home">
+    <header class="header-home">
+        <div class="div-bio">
+            <a href="/about-me" class="href-bio-face">
+                <amp-img src="/assets/hedera-eye/logo.jpg" alt="me" height="80" width="80"/>
+            </a>
+            <div class="div-bio-header">
+                <!--                <a href="{{ site.url }}{{ "/" | relative_url }}">-->
+                hedera.eye
+                </a>
+            </div>
+            <!--            <div class="div-bio-desc">{{ site.desc }}</div>-->
+
+
+            <a href="https://soundcloud.com/hedera-eye" title="SoundCloud">
+                <i class="fab fa-soundcloud" aria-hidden="true"></i>
+            </a>
+        </div>
+
+        <!--        <nav>-->
+        <!--            <a href="/hedera-eye" title="hedera.eye project">hedera.eye</a>-->
+        <!--            <a href="/papers" title="my white papers about software engineering">tech writings</a>-->
+        <!--            <a href="/posts" title="posts about anything else">notes</a>-->
+        <!--        </nav>-->
+    </header>
+<!--    {% include papers_list.html uid=page.id %}-->
+        {{ content }}
+</div>
+</body>
+</html>

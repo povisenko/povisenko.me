@@ -2,7 +2,7 @@
 <html lang="{{ page.lang | default: site.lang | default: " en" }}">
 {% include head.html %}
 <video autoplay muted loop id="background_video">
-    <source src="/assets/background.mp4" type="video/mp4">
+    <source src="/assets/backgrounds/home.mp4" type="video/mp4">
 </video>
 <body>
 <div class="div-home">
@@ -12,7 +12,7 @@
                 <amp-img src="/assets/me.jpg" alt="me" height="80" width="80"/>
             </a>
             <div class="div-bio-header">
-                <a href="{{ site.url }}{{ "/" | relative_url }}">
+<!--                <a href="{{ site.url }}{{ "/" | relative_url }}">-->
                 {{ site.header }}
                 </a>
             </div>
@@ -31,14 +31,9 @@
         </div>
 
         <nav>
-            <a href="/recordings" title="hedera.eye project">hedera.eye</a>
+            <a href="/records" title="hedera.eye project">hedera.eye</a>
             <a href="/papers" title="my white papers about software engineering">tech writings</a>
             <a href="/posts" title="posts about anything else">notes</a>
-<!--            <ul class="ul-main-menu">-->
-<!--                <li><a href="/recordings" title="hedera.eye project">hedera.eye</a></li>-->
-<!--                <li><a href="/papers" title="my white papers about software engineering">tech writings</a></li>-->
-<!--                <li><a href="/posts" title="posts about anything else">notes</a></li>-->
-<!--            </ul>-->
         </nav>
     </header>
     {{ content }}

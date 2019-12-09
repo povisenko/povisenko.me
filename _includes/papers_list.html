@@ -1,0 +1,50 @@
+{% if site.papers %}
+<ul class="rows">
+    <li class="row__cols">
+        <div class="row__title">
+            {% if site.post_title %}
+            {{ site.post_title }}
+            {% else %}
+            Title
+            {% endif %}
+        </div>
+        <div class="row__date">
+            {% if site.post_date %}
+            {{ site.post_date }}
+            {% else %}
+            Date
+            {% endif %}
+        </div>
+        <div class="row__cat">
+            {% if site.post_cat %}
+            {{ site.post_cat }}
+            {% else %}
+            Category
+            {% endif %}
+        </div>
+    </li>
+    {% for paper in site.papers %}
+    <li class="row__post">
+        <a href="{{ site.url }}{{ paper.url | relative_url }}">
+            <div class="row__title {% if include.uid == paper.id %}row__active{% endif %}">
+                {{ paper.title }}
+            </div>
+            <div class="row__date {% if include.uid == paper.id %}row__active{% endif %}">
+                {% if site.date_format %}
+                {{ paper.date | date: site.date_format }}
+                {% else %}
+                {{ paper.date | date: "%b %-d, %Y" }}
+                {% endif %}
+            </div>
+            <div class="row__cat {% if include.uid == paper.id %}row__active{% endif %}">
+                {{ paper.category }}
+            </div>
+        </a>
+
+        {% if paper.img %}
+        <img class="row__img" src="{{ paper.img }}" alt="{{ paper.title }}">
+        {% endif %}
+    </li>
+    {% endfor %}
+</ul>
+{% endif %}
