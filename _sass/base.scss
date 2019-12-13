@@ -78,14 +78,14 @@ body {
   min-height: 100%;
 }
 
-.container {
-  position: fixed;
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
-  width: 1200px;
-  max-width: 1200px;
-  margin: 0 25px;
-}
+//.container {
+//  position: fixed;
+//  background: rgba(0, 0, 0, 0.5);
+//  color: #f1f1f1;
+//  width: 1200px;
+//  max-width: 1200px;
+//  margin: 0 25px;
+//}
 
 // media queries
 @include media-query($on-palm) {

@@ -1,0 +1,13 @@
+<div class="header-container">
+    <a href="{{ include.img_href }}"class="header-face">
+        <amp-img src="{{ include.img }}" alt="me" height="80" width="80"/>
+    </a>
+    <div class="header-name">
+        {{ include.name }}
+    </div>
+    {% if include.description %}
+    <div class="header-description">
+        {{ include.description }}
+    </div>
+    {% endif %}
+</div>

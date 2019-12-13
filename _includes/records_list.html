@@ -2,25 +2,13 @@
   <ul class="rows">
     <li class="row__cols">
       <div class="row__title">
-        {% if site.post_title %}
-          {{ site.post_title }}
-        {% else %}
           Title
-        {% endif %}
       </div>
       <div class="row__date">
-        {% if site.post_date %}
-          {{ site.post_date }}
-        {% else %}
           Date
-        {% endif %}
       </div>
       <div class="row__cat">
-        {% if site.post_cat %}
-          {{ site.post_cat }}
-        {% else %}
-          Category
-        {% endif %}
+        Genre
       </div>
     </li>
     {% for record in site.records %}
@@ -40,7 +28,6 @@
             {{ record.category }}
           </div>
         </a>
-
         {% if record.img %}
           <img class="row__img" src="{{ record.img }}" alt="{{ record.title }}">
         {% endif %}

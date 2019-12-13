@@ -1,0 +1,31 @@
+.header-container {
+  margin-top: 20px;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.header-face {
+  amp-img {
+    border-radius: 50%;
+  }
+}
+
+.header-name {
+  font-weight: 700;
+  font-size: 1.1em !important;
+
+  //a {
+  //  text-decoration: none;
+  //
+  //  &:hover {
+  //    text-decoration: none;
+  //  }
+  //}
+}
+
+.header-description {
+
+}

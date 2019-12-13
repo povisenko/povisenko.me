@@ -5,38 +5,30 @@
     <source src="/assets/backgrounds/home.mp4" type="video/mp4">
 </video>
 <body>
-<div class="div-home">
-    <header class="header-home">
-        <div class="div-bio">
-            <a href="/about-me" class="href-bio-face">
-                <amp-img src="/assets/me.jpg" alt="me" height="80" width="80"/>
-            </a>
-            <div class="div-bio-header">
-<!--                <a href="{{ site.url }}{{ "/" | relative_url }}">-->
-                {{ site.header }}
+<div class="container">
+
+    {% include header.html img="/assets/me.jpg" img_href="/about-me" name="Sergey Povisenko" %}
+
+    <div class="container-center">
+        {% if site.data.social %}
+        <ul class="home-social">
+            {% for item in site.data.social %}
+            <li>
+                <a href="{{ item.url }}" title="{{ item.title }}">
+                    <i class="{{ item.fa-icon }}" aria-hidden="true"></i>
                 </a>
-            </div>
-            <!--            <div class="div-bio-desc">{{ site.desc }}</div>-->
-            {% if site.data.social %}
-            <ul class="ul-bio-social">
-                {% for item in site.data.social %}
-                <li>
-                    <a href="{{ item.url }}" title="{{ item.title }}">
-                        <i class="{{ item.fa-icon }}" aria-hidden="true"></i>
-                    </a>
-                </li>
-                {% endfor %}
-            </ul>
-            {% endif %}
-        </div>
+            </li>
+            {% endfor %}
+        </ul>
+        {% endif %}
 
         <nav>
-            <a href="/records" title="hedera.eye project">hedera.eye</a>
+            <a href="/hedera-eye" title="hedera.eye project">hedera.eye</a>
             <a href="/papers" title="my white papers about software engineering">tech writings</a>
             <a href="/posts" title="posts about anything else">notes</a>
         </nav>
-    </header>
-    {{ content }}
+    </div>
+
 </div>
 </body>
 </html>
