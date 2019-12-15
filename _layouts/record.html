@@ -1,47 +1,41 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
-  {% include head.html %}
+<html lang="{{ page.lang | default: site.lang | default: " en" }}">
+{% include head.html %}
 
-  <body>
-    <div class="container">
-      <div class="post">
-        <div class="div-bio-header">
-          <a href="{{ site.url }}{{ "/" | relative_url }}">
-            {{ site.header }}
-          </a>
+<body>
+<div class="container">
+    <div class="record">
+        <div class="record-meta">
+            <div class="record-title">{{ page.title }}</div>
+            <div class="record-date">
+                {% if site.date_format %}
+                {{ page.date | date: site.date_format }}
+                {% else %}
+                {{ page.date | date: "%b %-d, %Y" }}
+                {% endif %}
+            </div>
+            <div class="record-genre">{{ page.genre }}</div>
         </div>
 
-        <div class="post__meta">
-          <div class="post__title">{{ page.title }}</div>
-          <div class="post__date">
-            {% if site.date_format %}
-              {{ page.date | date: site.date_format }}
-            {% else %}
-              {{ page.date | date: "%b %-d, %Y" }}
-            {% endif %}
-          </div>
-          <div class="post__cat">{{ page.category }}</div>
-        </div>
-
-        <div class="post__body">
-          {{ content }}
+        <div class="record-body">
+            {{ content }}
         </div>
 
         {% if site.prev-next %}
-          <div class="post__paginate">
+        <div class="page-paginate">
             {% if page.previous.url %}
-              <a class="post__paginate-left" href="{{ site.url }}{{ page.previous.url | relative_url }}">{{ page.previous.title }}</a>
+            <a class="page-paginate-left" href="{{ site.url }}{{ page.previous.url | relative_url }}">{{
+                page.previous.title }}</a>
             {% endif %}
 
             {% if page.next.url %}
-              <a class="post__paginate-right" href="{{ site.url }}{{ page.next.url | relative_url }}">{{ page.next.title }}</a>
+            <a class="page-paginate-right" href="{{ site.url }}{{ page.next.url | relative_url }}">{{ page.next.title
+                }}</a>
             {% endif %}
-          </div>
+        </div>
         {% endif %}
-      </div>
-
-      {% include papers_list.html uid=page.id %}
     </div>
-  </body>
+</div>
+</body>
 
 </html>

@@ -1,13 +1,9 @@
 .header-container {
   margin-top: 20px;
-
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  text-align: center;
-}
+  align-items: center;
 
-.header-face {
   amp-img {
     border-radius: 50%;
   }
@@ -15,17 +11,9 @@
 
 .header-name {
   font-weight: 700;
-  font-size: 1.1em !important;
-
-  //a {
-  //  text-decoration: none;
-  //
-  //  &:hover {
-  //    text-decoration: none;
-  //  }
-  //}
+  font-size: 1.2em !important;
 }
 
 .header-description {
-
+  font-size: 1.1em !important;
 }

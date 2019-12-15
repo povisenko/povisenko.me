@@ -1,37 +1,37 @@
-{% if site.records %}
-  <ul class="rows">
+{% if include.records %}
+<ul class="rows">
     <li class="row__cols">
-      <div class="row__title">
-          Title
-      </div>
-      <div class="row__date">
-          Date
-      </div>
-      <div class="row__cat">
-        Genre
-      </div>
+        <div class="row__title">
+            Title
+        </div>
+        <div class="row__date">
+            Date
+        </div>
+        <div class="row__cat">
+            Genre
+        </div>
     </li>
-    {% for record in site.records %}
-      <li class="row__post">
+    {% for record in include.records %}
+    <li class="row__post">
         <a href="{{ site.url }}{{ record.url | relative_url }}">
-          <div class="row__title {% if include.uid == record.id %}row__active{% endif %}">
-            {{ record.title }}
-          </div>
-          <div class="row__date {% if include.uid == record.id %}row__active{% endif %}">
-            {% if site.date_format %}
-              {{ record.date | date: site.date_format }}
-            {% else %}
-              {{ record.date | date: "%b %-d, %Y" }}
-            {% endif %}
-          </div>
-          <div class="row__cat {% if include.uid == record.id %}row__active{% endif %}">
-            {{ record.category }}
-          </div>
+            <div class="row__title {% if include.uid == record.id %}row__active{% endif %}">
+                {{ record.title }}
+            </div>
+            <div class="row__date {% if include.uid == record.id %}row__active{% endif %}">
+                {% if site.date_format %}
+                {{ record.date | date: site.date_format }}
+                {% else %}
+                {{ record.date | date: "%b %-d, %Y" }}
+                {% endif %}
+            </div>
+            <div class="row__cat {% if include.uid == record.id %}row__active{% endif %}">
+                {{ record.genre }}
+            </div>
         </a>
         {% if record.img %}
-          <img class="row__img" src="{{ record.img }}" alt="{{ record.title }}">
+        <img class="row__img" src="{{ record.img }}" alt="{{ record.title }}">
         {% endif %}
-      </li>
+    </li>
     {% endfor %}
-  </ul>
+</ul>
 {% endif %}

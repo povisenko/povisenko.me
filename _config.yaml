@@ -5,19 +5,11 @@ url: ""
 favicon: "/assets/sample/ico.png"
 g_analytics: UA-12345678-1
 
-# bio
-header: Sergey Povisenko
-desc: >
-  <i class="fas fa-sun"></i>
-
 # posts
 date_format: "%Y"
 post_title: Story
 post_date: Year
 post_cat: Genre
-
-records:
-  title: Title
 
 # post detail
 prev-next: true
@@ -29,9 +21,11 @@ exclude:
   - Gemfile
   - Gemfile.lock
 
+
 collections:
-  records:
+  hedera-eye:
     output: true
+    permalink: /:collection/:title
   papers:
     output: true
 

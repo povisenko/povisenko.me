@@ -1,7 +1,7 @@
 ---
-layout: paper
+layout: record
 title:  return back (ep)
-category: electronic
+genre: electronic
 img: /assets/hedera-eye/return_back_ep_cover.jpg
 ---
 
