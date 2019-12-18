@@ -3,39 +3,41 @@
 {% include head.html %}
 
 <body>
-<div class="container">
+
+{% include header.html
+img="/assets/hedera-eye/logo.jpg"
+img_href="https://soundcloud.com/hedera-eye" %}
+
+<div class="record-container">
     <div class="record">
         <div class="record-meta">
             <div class="record-title">{{ page.title }}</div>
-            <div class="record-date">
+            <div class="record-details">
+                {{ page.genre }} &bull;
                 {% if site.date_format %}
                 {{ page.date | date: site.date_format }}
                 {% else %}
                 {{ page.date | date: "%b %-d, %Y" }}
                 {% endif %}
             </div>
-            <div class="record-genre">{{ page.genre }}</div>
-        </div>
-
-        <div class="record-body">
             {{ content }}
         </div>
+        <iframe class="record-body" width="100%" height="600" allow="autoplay" src="{{ page.link}}"></iframe>
+    </div>
+    {% if site.prev-next %}
+    <div class="page-paginate">
+        {% if page.previous.url %}
+        <a class="page-paginate-left" href="{{ site.url }}{{ page.previous.url | relative_url }}">{{
+            page.previous.title }}</a>
+        {% endif %}
 
-        {% if site.prev-next %}
-        <div class="page-paginate">
-            {% if page.previous.url %}
-            <a class="page-paginate-left" href="{{ site.url }}{{ page.previous.url | relative_url }}">{{
-                page.previous.title }}</a>
-            {% endif %}
-
-            {% if page.next.url %}
-            <a class="page-paginate-right" href="{{ site.url }}{{ page.next.url | relative_url }}">{{ page.next.title
-                }}</a>
-            {% endif %}
-        </div>
+        {% if page.next.url %}
+        <a class="page-paginate-right" href="{{ site.url }}{{ page.next.url | relative_url }}">{{ page.next.title
+            }}</a>
         {% endif %}
     </div>
+    {% endif %}
 </div>
-</body>
 
+</body>
 </html>
