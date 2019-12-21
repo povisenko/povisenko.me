@@ -24,7 +24,6 @@ img_href="https://soundcloud.com/hedera-eye" %}
         </div>
         <iframe class="record-body" width="100%" height="600" allow="autoplay" src="{{ page.link}}"></iframe>
     </div>
-    {% if site.prev-next %}
     <div class="page-paginate">
         {% if page.previous.url %}
         <a class="page-paginate-left" href="{{ site.url }}{{ page.previous.url | relative_url }}">{{
@@ -36,7 +35,6 @@ img_href="https://soundcloud.com/hedera-eye" %}
             }}</a>
         {% endif %}
     </div>
-    {% endif %}
 </div>
 
 </body>
