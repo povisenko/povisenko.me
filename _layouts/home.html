@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: " en" }}">
 {% include head.html %}
-<video autoplay muted loop id="background_video">
-    <source src="/assets/backgrounds/home.mp4" type="video/mp4">
-</video>
+{% include background.html video="/assets/backgrounds/home.mp4" %}
 <body>
 <div class="container">
 
@@ -28,7 +26,6 @@
             <a href="/posts" title="{{ site.notes_descr }}">notes</a>
         </nav>
     </div>
-
 </div>
 </body>
 </html>

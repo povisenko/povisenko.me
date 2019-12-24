@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: " en" }}">
 {% include head.html %}
-<video autoplay muted loop id="background_video">
-    <source src="/assets/backgrounds/papers.mp4" type="video/mp4">
-</video>
+{% include background.html video="/assets/backgrounds/papers.mp4" %}
 <body>
 <div class="container">
 
