@@ -13,7 +13,13 @@
     </li>
     {% for paper in site.papers %}
     <li class="row__post">
-        <a href="{{ site.url }}{{ paper.url | relative_url }}">
+
+        <a {% if paper.dzoneLink %}
+           href="{{ paper.dzoneLink }}" target="_blank" rel="noopener noreferrer"
+           {% else %}
+           href="{{ site.url }}{{ paper.url | relative_url }}"
+           {% endif %}>
+
             <div class="row__title {% if include.uid == paper.id %}row__active{% endif %}">
                 {{ paper.title }}
             </div>
