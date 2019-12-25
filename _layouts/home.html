@@ -5,14 +5,15 @@
 <body>
 <div class="container">
 
-    {% include header.html img="/assets/me.jpg" img_href="/about-me" name="Sergey Povisenko" %}
+    {% include header.html img="/assets/me.jpg" img_href="/about" name="povis" %}
 
     <div class="home">
         {% if site.data.social %}
         <ul class="home-social">
             {% for item in site.data.social %}
             <li>
-                <a href="{{ item.url }}" title="{{ item.title }}">
+                <a href="{{ item.url }}" title="{{ item.title }}" target="_blank"
+                   rel="noopener noreferrer">
                     <i class="{{ item.fa-icon }}" aria-hidden="true"></i>
                 </a>
             </li>
@@ -23,7 +24,7 @@
         <nav>
             <a href="/hedera-eye" title="{{ site.hedera_eye_descr }}">hedera.eye</a>
             <a href="/papers" title="{{ site.papers_descr }}">tech writings</a>
-            <a href="/posts" title="{{ site.notes_descr }}">notes</a>
+            <a href="/about">about</a>
         </nav>
     </div>
 </div>

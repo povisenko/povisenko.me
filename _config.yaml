@@ -1,5 +1,5 @@
 # site
-title: Sergey Povisenko
+title: povis
 baseurl: ""
 url: http://povis.me
 favicon: "/assets/sample/ico.png"
@@ -14,7 +14,6 @@ post_cat: Genre
 # tooltips and short descriptions
 hedera_eye_descr: music project
 papers_descr: my white papers about software engineering
-notes_descr: posts about anything else
 
 # post detail
 prev-next: true
