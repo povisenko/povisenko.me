@@ -72,7 +72,7 @@
 // media queries
 @include media-query($on-laptop) {
   .row__post {
-      &:hover {
+    &:hover {
       * {
         text-decoration: underline;
         cursor: pointer;

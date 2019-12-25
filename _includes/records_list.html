@@ -12,7 +12,12 @@
         </div>
     </li>
     {% for record in include.records %}
-    <li class="row__post">
+    <li class="{% if include.row_class %}
+         {{ include.row_class }}
+         {% else %}
+         row__post
+         {% endif %}"
+    >
         <a href="{{ site.url }}{{ record.url | relative_url }}">
             <div class="row__title {% if include.uid == record.id %}row__active{% endif %}">
                 {{ record.title }}

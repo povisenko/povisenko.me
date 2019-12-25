@@ -2,8 +2,6 @@
 title: povis
 baseurl: ""
 url: http://povis.me
-favicon: "/assets/sample/ico.png"
-g_analytics: UA-12345678-1
 
 # posts
 date_format: "%Y"
@@ -24,7 +22,6 @@ markdown: kramdown
 exclude:
   - Gemfile
   - Gemfile.lock
-
 
 collections:
   hedera-eye:

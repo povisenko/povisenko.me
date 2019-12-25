@@ -1,0 +1,9 @@
+.row__post_hedera_eye {
+  @extend .row__post;
+
+  &:hover {
+    * {
+      color: #fefeca;
+    }
+  }
+}

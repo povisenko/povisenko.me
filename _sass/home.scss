@@ -6,7 +6,7 @@
 }
 
 .home-social {
-  margin: 10px 0 0;
+  margin: 5px 0 0;
   padding: 0;
   list-style: none;
 
@@ -21,4 +21,8 @@
 nav {
   margin: 15px 0 20px;
   font-size: 1.4em !important;
+  a:hover {
+    color: #fefeca;
+    text-decoration: underline;
+  }
 }

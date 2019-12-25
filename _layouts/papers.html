@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: " en" }}">
+
 {% include head.html %}
 {% include background.html video="/assets/backgrounds/papers.mp4" %}
+
 <body>
 <div class="container">
 
     {% include header.html
     img="/assets/me.jpg"
-    img_href=site.url
+    img_href="/papers"
     name="Sergey Povisenko"
+    home_icon="true"
     description=site.papers_descr%}
 
     {% include papers_list.html uid=page.id %}
