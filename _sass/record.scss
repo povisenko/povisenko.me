@@ -8,16 +8,10 @@
 
 .record {
   overflow: hidden;
-  margin-top: 20px;
+  //margin-top: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.record-title {
-  font-weight: bold;
-  font-size: 1.3em !important;
-  text-align: center;
 }
 
 .record-details {

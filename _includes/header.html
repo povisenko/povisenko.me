@@ -16,7 +16,10 @@
     </div>
     {% endif %}
 
-    <div class="header-name">
+    <div class="header-name"
+         {% if include.dark_background %}
+         style="color: #fefeca;"
+         {% endif %}>
         {{ include.name }}
     </div>
 
@@ -31,7 +34,10 @@
     {% endif %}
 
     {% if include.description %}
-    <div class="header-description">
+    <div class="header-description"
+         {% if include.dark_background %}
+         style="color: #fefeca;"
+         {% endif %}>
         {{ include.description }}
     </div>
     {% endif %}

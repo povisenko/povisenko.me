@@ -6,6 +6,7 @@
 {% include header.html
 img="/assets/hedera-eye/logo.jpg"
 img_href="https://soundcloud.com/hedera-eye"
+name=page.title
 new_tab="true"
 dark_background=page.dark_background
 parenturl="/hedera-eye" %}
@@ -14,7 +15,6 @@ parenturl="/hedera-eye" %}
     <div class="record" {% if page.dark_background %}
          style="color: #fefeca;"
          {% endif %}>
-        <div class="record-title">{{ page.title }}</div>
         <div class="record-details">
             {{ page.genre }} &bull;
             {% if site.date_format %}
@@ -22,8 +22,9 @@ parenturl="/hedera-eye" %}
             {% else %}
             {{ page.date | date: "%b %-d, %Y" }}
             {% endif %}
+
+            {{ content }}
         </div>
-        {{ content }}
 
         <iframe class="record-body"
                 {% if page.dark_background %}
