@@ -44,3 +44,20 @@ $paginate-padding: 13px;
     content: "\21FE";
   }
 }
+
+//background videos
+
+#background_video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.background_video_copyrights {
+  position: fixed;
+  bottom: 0;
+  right: 5px;
+  font-size: 0.8em !important;
+}

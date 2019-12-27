@@ -1,36 +1,52 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: " en" }}">
 {% include head.html %}
-<body>
+<body style="background-image: url(..{{ page.img }});">
 {% include header.html
 img="/assets/hedera-eye/logo.jpg"
-img_href="/hedera-eye" %}
+img_href="https://soundcloud.com/hedera-eye"
+new_tab="true"
+dark_background=page.dark_background
+parenturl="/hedera-eye" %}
 
-<!--style="background-image: url(..{{ page.img }});"-->
 <div class="record-container">
-    <div class="record">
-        <div class="record-meta">
-            <div class="record-title">{{ page.title }}</div>
-            <div class="record-details">
-                {{ page.genre }} &bull;
-                {% if site.date_format %}
-                {{ page.date | date: site.date_format }}
-                {% else %}
-                {{ page.date | date: "%b %-d, %Y" }}
-                {% endif %}
-            </div>
-            {{ content }}
+    <div class="record" {% if page.dark_background %}
+         style="color: #fefeca;"
+         {% endif %}>
+                <div class="record-title">{{ page.title }}</div>
+        <div class="record-details">
+            {{ page.genre }} &bull;
+            {% if site.date_format %}
+            {{ page.date | date: site.date_format }}
+            {% else %}
+            {{ page.date | date: "%b %-d, %Y" }}
+            {% endif %}
         </div>
-        <iframe class="record-body" width="100%" height="600" allow="autoplay" src="{{ page.link}}"></iframe>
+        {{ content }}
+
+        <iframe class="record-body"
+                {% if page.dark_background %}
+                style="border-color: #fefeca;"
+                {% endif %}
+                width="100%" height="600" allow="autoplay" src="{{ page.link}}"></iframe>
     </div>
     <div class="page-paginate">
         {% if page.previous.url %}
-        <a class="page-paginate-left" href="{{ site.url }}{{ page.previous.url | relative_url }}">{{
+        <a class="page-paginate-left" href="{{ site.url }}{{ page.previous.url | relative_url }}"
+           {% if page.dark_background %}
+           style="color: #fefeca;"
+           {% endif %}
+        >{{
             page.previous.title }}</a>
         {% endif %}
 
         {% if page.next.url %}
-        <a class="page-paginate-right" href="{{ site.url }}{{ page.next.url | relative_url }}">{{ page.next.title
+        <a class="page-paginate-right" href="{{ site.url }}{{ page.next.url | relative_url }}"
+           {% if page.dark_background %}
+           style="color: #fefeca;"
+           {% endif %}
+        >{{
+            page.next.title
             }}</a>
         {% endif %}
     </div>

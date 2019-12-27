@@ -12,9 +12,13 @@
         {{ include.name }}
     </div>
 
-    {% if include.home_icon %}
-    <a href="{{ site.url }}" title="home page">
-        <i class="fas fa-backward" aria-hidden="true"></i>
+    {% if include.parenturl %}
+    <a href="{{ include.parenturl }}" title="to the parent page">
+        <i class="fas fa-hand-point-left" aria-hidden="true"
+           {% if include.dark_background %}
+           style="color: #fefeca;"
+           {% endif %}
+        ></i>
     </a>
     {% endif %}
 
