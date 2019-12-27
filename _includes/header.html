@@ -1,12 +1,20 @@
 <div class="header-container">
+
+    {% if include.img_href %}
     <a href="{{ include.img_href }}"
        {% if include.new_tab %}
        target="_blank"
        rel="noopener noreferrer"
        {% endif %}
     >
+
         <amp-img src="{{ include.img }}" alt="me" height="80" width="80"/>
     </a>
+    {% else %}
+    <div>
+        <amp-img src="{{ include.img }}" alt="me" height="80" width="80"/>
+    </div>
+    {% endif %}
 
     <div class="header-name">
         {{ include.name }}

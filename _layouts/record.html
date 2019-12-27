@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: " en" }}">
-{% include head.html %}
+{% include head.html web_title=page.web_title %}
 <body style="background-image: url(..{{ page.img }});">
+
 {% include header.html
 img="/assets/hedera-eye/logo.jpg"
 img_href="https://soundcloud.com/hedera-eye"
@@ -13,7 +14,7 @@ parenturl="/hedera-eye" %}
     <div class="record" {% if page.dark_background %}
          style="color: #fefeca;"
          {% endif %}>
-                <div class="record-title">{{ page.title }}</div>
+        <div class="record-title">{{ page.title }}</div>
         <div class="record-details">
             {{ page.genre }} &bull;
             {% if site.date_format %}
