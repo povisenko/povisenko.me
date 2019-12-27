@@ -1,4 +1,4 @@
 ---
-   layout: hedera-eye
-   title: hedera.eye • Sergey Povisenko
+layout: hedera-eye
+title: hedera.eye • Sergey Povisenko
 ---
