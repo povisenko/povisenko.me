@@ -1,7 +1,7 @@
 # site
 title: povis
 baseurl: ""
-url: http://povis.me
+url: https://keen-lamport-a8601d.netlify.com
 
 # posts
 date_format: "%Y"
