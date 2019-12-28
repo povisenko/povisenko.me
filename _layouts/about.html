@@ -1,11 +1,18 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: " en" }}">
 {% include head.html %}
-{% include background.html video="/assets/backgrounds/home.mp4" copyrights="true" %}
+{% include background.html video="/assets/backgrounds/about.mp4" copyrights=true %}
 <body>
-<div class="container">
+<div class="about-container">
 
-    {% include header.html img="/assets/me.jpg" name="Sergey Povisenko" parenturl="/" %}
+    {% include header.html name="Sergey Povisenko" parenturl="/" dark_background=true %}
+
+    <img src="/assets/about/dolphines.gif"  width="364" height="480" frameBorder="0">
+    <img src="/assets/about/logo.jpg" height="400" width="500" alt="me-2"/>
+    <img src="/assets/about/waterfall.mp4" width="344" height="480" frameBorder="0" style="opacity: 0.5; margin-left: 11%" >
+    <img src="/assets/about/waterfall-2.mp4" width="480" height="480" frameBorder="0" style="margin-left: 30%;">
+
+    <div><p>DO NOT BE SO SERIUS MANNN!</p></div>
 
 </div>
 </body>

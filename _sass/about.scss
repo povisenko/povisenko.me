@@ -1,0 +1,7 @@
+.about-container {
+  @extend .container;
+
+  flex-direction: initial;
+
+  color: $color__yellow;
+}
