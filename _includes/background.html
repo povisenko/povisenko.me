@@ -1,7 +1,10 @@
 <video autoplay muted loop id="background_video">
     <source src="{{ include.video }}" type="video/mp4">
 </video>
+
+{% if include.copyrights %}
 <div class="background_video_copyrights">
     original video by <a href="http://www.ultraslo.com" target="_blank"
-                            rel="noopener noreferrer">UltraSlo</a>
+                         rel="noopener noreferrer">UltraSlo</a>
 </div>
+{% endif %}
