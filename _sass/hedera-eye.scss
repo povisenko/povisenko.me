@@ -1,9 +1,20 @@
-.row__post_hedera_eye {
-  @extend .row__post;
+.hedera-eye-container {
+  @extend .container;
 
-  &:hover {
-    * {
-      color: #fefeca;
-    }
+  a:hover {
+    color: $color__yellow;
   }
+
+  .rows:hover {
+    color: $color__yellow;
+  }
+
+  .header-name:hover {
+    color: $color__yellow;
+  }
+
+  .header-description:hover{
+    color: $color__yellow;
+  }
+
 }
